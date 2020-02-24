@@ -1,0 +1,78 @@
+form {
+	margin: 4em auto;
+	max-width: 400px;
+	box-shadow: 0 0 10px 1px black;
+	border-radius: 5px;
+	padding: 2em;
+	font-family: 'Montserrat';
+}
+
+section {
+	margin: 1rem;
+	padding: 0.5rem;
+}
+
+h2 {
+	color: #1b8cc0;
+	font-size: 1.2rem;
+	font-weight: normal;
+}
+
+label {
+	display: block;
+	margin-bottom: 1rem;
+}
+
+input {
+	padding: 0.45rem 0.45rem;
+	font-family: inherit;
+	box-sizing: border-box;
+}
+
+input[type="button"],
+input[type="submit"] {
+	text-transform: uppercase;
+	background: #68a9c7;
+	border: 1px solid #899ea8;
+	border-radius: 3px;
+	color: whitesmoke;
+	letter-spacing: 0.05rem;
+	font-weight: 500;
+}
+
+.type-here {
+	border-bottom: 2px solid green;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	font-size: 1rem;
+	width: 100%;
+	margin-bottom: 1rem;
+	outline: none;
+	background: white;
+	padding-right: 0;
+}
+
+#step2,
+#step3 {
+	display: none;
+}
+
+.requirements {
+	background: rgba(252, 5, 5, 0.171);
+	border-color: red;
+}
+
+.requirements::before {
+	color: red;
+	font-size: 0.8rem;
+	padding-left: 0.2rem;
+}
+
+.email-error.requirements::before {
+	content: 'Must be a valid email';
+}
+
+.password-error.requirements::before {
+	content: 'You must enter a password';
+}

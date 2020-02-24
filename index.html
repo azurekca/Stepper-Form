@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Step Form</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="step.css">
+</head>
+<body>
+  <form id="stepForm">
+    <h2>Step 1</h2>
+    <div id="step1" class="collapse">
+      <label for="email">How can we reach you?</label>
+      <div class="email-error"></div>
+      <input type="email" name="email" id="email" class="type-here" placeholder="Your e-mail" required spellcheck="false">
+      <input type="button" class="continue" value="continue">
+    </div>  
+    <h2>Step 2</h2>
+    <div id="step2" class="collapse">
+      <label for="password">Password</label>
+      <div class="password-error"></div>
+      <input type="password" name="password" id="password" class="type-here" required>
+      <input type="button" class="continue" value="continue">
+      <input type="button" class="back" value="back">
+    </div>
+    <h2>Step 3</h2>
+    <div id="step3" class="collapse">
+      <p>Finish!</p>
+      <input type="submit" id="submit" value="Submit">
+      <input type="button" class="back" value="back">
+    </div>
+  </form>
+  <!-- </form> -->
+  <script src="step.js"></script>
+</body>
+</html>
